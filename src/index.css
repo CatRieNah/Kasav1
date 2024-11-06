@@ -32,6 +32,9 @@ header nav a {
   font-size: 24px;
   font-weight: 500;
 }
+header .nav-active {
+  text-decoration: underline;
+}
 
 @media (max-width: 1024px) and (min-width: 769px) {
   header nav a {
