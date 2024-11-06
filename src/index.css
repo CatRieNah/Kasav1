@@ -219,5 +219,36 @@ footer p {
     height: 225px;
   }
 }
+.dropdown-container {
+  margin: 2em 5em;
+  padding: 0 8em;
+}
+
+.dropdown {
+  background: rgba(246, 246, 246, 0.45);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.dropdown-title {
+  background: rgb(255, 96, 96);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.dropdown-title h2 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+.dropdown-title i {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+.dropdown-content {
+  font-size: 18px;
+  padding: 20px 15px;
+}
 
 /*# sourceMappingURL=index.css.map */
