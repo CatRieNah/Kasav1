@@ -12,10 +12,11 @@ const Home = () => {
                 urlImage = {bannerImage}
             />
             <ul className="card-container">
-                {/* On utilise map() pour parcourir le tableau de data et récupérer title et  cover */}
+                {/* On utilise map() pour parcourir le tableau de data et récupérer  les valeurs de id, title et  cover */}
                 {data.map((data,id)=>(
                     <Card 
                         key = {data.id}
+                        id = {data.id}
                         cardTitle={data.title}
                         cardImage={data.cover}
                     />

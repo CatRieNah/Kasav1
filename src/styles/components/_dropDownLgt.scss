@@ -1,0 +1,13 @@
+.dropdown-logement{
+    padding: 1rem 5rem;
+    gap: 20px;
+    margin-top: 35px;
+    display: flex;
+    .dropdown{
+        width: 50%;
+    }
+    .equipments{
+        display: flex;
+        flex-direction: column;
+    }
+}

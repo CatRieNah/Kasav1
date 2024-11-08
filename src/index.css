@@ -182,6 +182,7 @@ footer p {
   padding: 50px;
   gap: 3.5rem;
   border-radius: 25px;
+  cursor: pointer;
 }
 .card-container .card {
   border-radius: 10px;
@@ -225,7 +226,6 @@ footer p {
 }
 
 .dropdown {
-  background: rgba(246, 246, 246, 0.45);
   margin-bottom: 20px;
   border-radius: 5px;
   overflow: hidden;
@@ -246,9 +246,158 @@ footer p {
   color: rgb(255, 255, 255);
   font-size: 32px;
 }
-.dropdown-content {
+.dropdown-content, .dropdown-list {
   font-size: 18px;
   padding: 20px 15px;
+  background: rgba(246, 246, 246, 0.45);
+}
+.dropdown-content li, .dropdown-list li {
+  margin-bottom: 5px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .dropdown-container {
+    padding: 0;
+  }
+  .dropdown h2 {
+    font-size: 18px;
+  }
+  .dropdown i {
+    font-size: 24px;
+  }
+  .dropdown-content {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .dropdown-container {
+    margin: 1rem;
+    padding: 0;
+  }
+  .dropdown h2 {
+    font-size: 14px;
+  }
+  .dropdown i {
+    font-size: 18px;
+  }
+  .dropdown-content {
+    font-size: 13px;
+  }
+}
+.carousel {
+  height: 415px;
+  margin: 2rem 5rem;
+  text-align: center;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 96px;
+  padding: 0 15px;
+}
+.carousel span i {
+  color: rgb(255, 255, 255);
+}
+.carousel p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  bottom: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.info-part-1 > * {
+  margin-bottom: 10px;
+}
+.info-part-1 h1 {
+  color: rgb(255, 96, 96);
+  font-size: 36px;
+}
+.info-part-1 p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.info-part-1 ul {
+  display: flex;
+  gap: 10px;
+}
+.info-part-1 ul li {
+  background: rgb(255, 96, 96);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 5px;
+  width: 150px;
+  text-align: center;
+}
+
+.host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.host img {
+  width: 64px;
+  border-radius: 50%;
+}
+.host p {
+  font-size: 18px;
+  color: rgb(255, 96, 96);
+  font-weight: 500;
+  width: 93px;
+  text-align: end;
+}
+
+.stars {
+  display: flex;
+  gap: 10px;
+}
+.stars i {
+  color: rgb(227, 227, 227);
+  font-size: 24px;
+}
+.stars .red-star {
+  color: rgb(255, 96, 96);
+}
+
+.dropdown-logement {
+  padding: 1rem 5rem;
+  gap: 20px;
+  margin-top: 35px;
+  display: flex;
+}
+.dropdown-logement .dropdown {
+  width: 50%;
+}
+.dropdown-logement .equipments {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=index.css.map */
