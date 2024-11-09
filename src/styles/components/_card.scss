@@ -7,11 +7,20 @@
     gap: 3.5rem; 
     border-radius: 25px;
     cursor: pointer;
+
     .card{
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     height: 340px; 
+
+    &::after{
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: rgba(0,0,0,.2);
+        z-index: 1;
+    }
 
         img{
             width: 100%;
@@ -24,6 +33,7 @@
             left: 15px;
             color: white;
             font-size: 18px;
+            z-index: 2;
         }
     }
 }
