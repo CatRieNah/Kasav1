@@ -1,15 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Card = ({cardTitle,cardImage,id}) => {
-    
+// On utilise useNavigate pour la estion de redirection vers la page de logement
+const Card = ({ cardTitle, cardImage, id }) => {
+    const navigate = useNavigate();
+
+    // Fonction pour naviguer vers la page de logement
+    const handleClick = () => {
+        navigate(`/logement/${id}`);
+    };
+
     return (
-        <Link to={`/logement/${id}`}>
-            <li className='card'>
-                <img src={cardImage} alt={cardTitle}/>
-                <h2>{cardTitle}</h2>
-            </li>
-        </Link>
+        <li className='card' onClick={handleClick} style={{ cursor: 'pointer' }}>
+            <img src={cardImage} alt={cardTitle} />
+            <h2>{cardTitle}</h2>
+        </li>
     );
 };
 

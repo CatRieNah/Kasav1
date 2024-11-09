@@ -1,6 +1,6 @@
 .carousel{
     height: 415px;
-    margin: 2rem 5rem;
+    margin: 1rem 5rem;
     text-align: center;
     border-radius: 25px;
     overflow: hidden;
@@ -31,5 +31,27 @@
         font-weight: 500; 
         bottom: 50px;
         color: rgba(255, 255, 255, 1);
+    }
+}
+// responsive 
+@media (max-width: 1024px ) and (min-width:769px){
+    .carousel{
+        span{
+            font-size: 50px;
+        }
+    }
+
+}
+@media (max-width: 769px){
+    .carousel{
+        height: 225px;
+        margin: 1rem;
+
+        span{
+            font-size: 24px;
+        }
+        p{
+            font-size: 12px;
+        }
     }
 }

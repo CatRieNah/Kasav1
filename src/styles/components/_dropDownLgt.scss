@@ -1,13 +1,23 @@
 .dropdown-logement{
-    padding: 1rem 5rem;
     gap: 20px;
-    margin-top: 35px;
     display: flex;
+    margin: 1rem 5rem;
     .dropdown{
         width: 50%;
     }
     .equipments{
         display: flex;
         flex-direction: column;
+    }
+}
+//responsive
+@media (max-width:768px){
+    .dropdown-logement{
+        flex-direction: column;
+        margin: 1rem;
+        gap: 0;
+        .dropdown{
+            width: 100%;
+        }
     }
 }

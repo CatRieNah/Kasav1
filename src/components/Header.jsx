@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+//import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo/logo-header.png'
 
-const Header = () => {
-   //On utilise useState pour gérer l'état des liens au clic
+/*const Header = () => {
+   //On utilise useLocation pour gérer l'état des liens au clic
    const [activeLink, setActiveLink] = useState(null)
     function handleClick(link){
         setActiveLink(link)
@@ -21,6 +21,26 @@ const Header = () => {
             </nav>
         </header>
     );
+};*/
+
+const Header = () => {
+    // On utilise UseLocation pour gérer surligner le lien si la page correspond au lien définie dans useLocation
+    const location = useLocation()
+    return (
+        <header>
+            <img src={logo} alt="logo" />
+            <nav>
+                {/*Si la page correspond au lien de la page dans useLocation, on surligne le lien */}
+               <Link to='/' className={location.pathname === '/' ? "nav-active" : "null"}>
+                    Acceuil
+               </Link>
+               <Link to='/about' className={location.pathname === '/about' ? "nav-active" : "null"}>
+                    A propos
+               </Link>
+            </nav>
+        </header>
+    );
 };
+
 
 export default Header;
