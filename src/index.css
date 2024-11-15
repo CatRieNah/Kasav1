@@ -18,6 +18,10 @@ ul, li {
   list-style: none;
 }
 
+main {
+  min-height: 65vh;
+}
+
 header {
   padding: 2rem 5rem;
   display: flex;
@@ -115,12 +119,6 @@ footer p {
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
-  footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
   footer p {
     font-size: 18px;
   }
@@ -128,10 +126,6 @@ footer p {
 @media (max-width: 768px) {
   footer {
     padding: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
   }
   footer p {
     font-size: 12px;
