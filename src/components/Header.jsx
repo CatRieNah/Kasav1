@@ -31,10 +31,10 @@ const Header = () => {
             <img src={logo} alt="logo" />
             <nav>
                 {/*Si la page correspond au lien de la page dans useLocation, on surligne le lien */}
-               <Link to='/' className={location.pathname === '/' ? "nav-active" : "null"}>
+               <Link to='/' className={location.pathname === '/' ? "nav-active" : ""}>
                     Acceuil
                </Link>
-               <Link to='/about' className={location.pathname === '/about' ? "nav-active" : "null"}>
+               <Link to='/about' className={location.pathname === '/about' ? "nav-active" : ""}>
                     A propos
                </Link>
             </nav>

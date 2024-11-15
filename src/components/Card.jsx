@@ -11,7 +11,7 @@ const Card = ({ cardTitle, cardImage, id }) => {
     };
 
     return (
-        <li className='card' onClick={handleClick} style={{ cursor: 'pointer' }}>
+        <li className='card' onClick={handleClick}>
             <img src={cardImage} alt={cardTitle} />
             <h2>{cardTitle}</h2>
         </li>
